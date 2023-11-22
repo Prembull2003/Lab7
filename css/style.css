@@ -1,0 +1,182 @@
+header {
+    background-color: rgb(162, 190, 232);
+    color: black;
+    display: flex;
+}
+
+header img {
+    height: auto;
+    width: auto;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5.5em;
+    font-weight: 500;
+    line-height: 250%;
+    text-align: center;
+    text-shadow: 2px 2px 10px;
+    padding-left: 40px;
+    margin: 0;
+}
+
+section {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#sections {
+    display: flex;
+}
+
+#sections section h2 {
+    color: #A3D5FF;
+}
+
+#sections section p {
+    width: 650px;
+}
+
+section h2 p {
+    margin-left: 40px;
+}
+
+
+nav {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    opacity: 0.7;
+    text-align: left;
+    list-style-type: none;
+    width: 200px;
+    padding: 20px;
+    padding-bottom: 41.5%;
+    padding-right: 65px;
+    margin-right: 20px;
+    background-color: rgb(162, 190, 232);
+}
+
+nav ul {
+    flex-direction: column; /* Stack the items vertically */
+}
+
+nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+    margin-bottom: 70px; /* Add some vertical spacing between items */
+}
+
+
+nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: palevioletred;
+    padding: 35px 105px; /* Adjust padding values to control spacing */
+    margin-left: -60px; /* Adjust margin to add space between links */
+}
+
+
+
+li {
+    line-height: 40px;
+}
+
+aside {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+#right {
+    text-align: right;
+    margin-top: -635px;
+}
+
+#right aside {
+    width: 1560px;
+    height: 860px;
+}
+
+footer {
+    background-color: rgb(162, 190, 232);
+    text-align: center;
+    padding: 40px
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.8em;
+    width: 100%;
+    height: 100%;
+    }
+
+    #sections {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    nav {
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-right: 100%;
+    }
+
+    nav ul li a {
+        font-size: 21px;
+        padding: 12% 15%;
+        padding-right: 690px;
+        background-color: darkblue;
+        margin-left: -60px;
+        margin-bottom: -218px;
+    }
+
+    footer {
+        margin: 0;
+        margin-top: -200px;
+    }
+}
+
+/* Styles for tablet view (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    #sections {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: fit-content;
+    }
+    
+    h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2.3em;
+        align-items: center;
+        height: 100%;
+    }
+
+    nav {
+        display: flex;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        
+    }
+
+    li  {
+        display: inline;
+        justify-content: flex-end;
+    }
+
+    nav ul li a {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
